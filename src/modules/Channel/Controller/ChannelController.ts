@@ -6,7 +6,7 @@ export async function getData(request, reply) {
     const users = server.functionalityService.function1();
     reply.code(200).send({ users });
   } catch (err) {
-    console.log(err.message);
+    console.error(err.message);
     reply.code(503).send({ message: "Service not available" });
   }
 }

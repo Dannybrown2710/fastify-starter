@@ -1,9 +1,9 @@
-import { getData } from "./FunctionalityController";
+import { getData } from "./ChannelController";
 
 const routes = [
   {
     method: "GET",
-    url: "/blog",
+    url: "/demo",
     handler: getData,
   },
 //   {

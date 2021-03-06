@@ -1,5 +1,5 @@
 import fp from "fastify-plugin";
-import Module1 from "./modules/module1/"
+import Channel from "./modules/Channel/"
 export default fp(async (server, opts, next) => {
-    server.register(Module1);
+    server.register(Channel);
 });
