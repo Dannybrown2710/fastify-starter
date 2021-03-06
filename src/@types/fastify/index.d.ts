@@ -1,8 +1,10 @@
+import { Module1Service } from "./modules/module1/Service/";
 import { Mongoose } from "mongoose";
 
 declare module "fastify" {
   export interface FastifyInstance {
     module1: Module1;
+    functionalityService: Module1Service;
     db: Mongoose;
   }
 }

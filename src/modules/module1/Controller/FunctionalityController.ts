@@ -1,7 +1,9 @@
+import { FastifyInstance } from "fastify";
+
 export async function getData(request, reply) {
   try {
-    console.log(request);
-    const users = null;
+    const server: FastifyInstance = this;
+    const users = server.functionalityService.function1();
     reply.code(200).send({ users });
   } catch (err) {
     console.log(err.message);

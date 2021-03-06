@@ -1,4 +1,4 @@
-export interface UserAccountService {
+export interface Functionality1Service {
   function1: (param1: string, param2: any) => string;
 }
 
@@ -15,4 +15,7 @@ export default (server, opts, next) => {
       throw err;
     }
   }
+  return {
+    function1,
+  };
 };
