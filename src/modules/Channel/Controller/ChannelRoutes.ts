@@ -1,6 +1,7 @@
+import { RouteType } from "GenericTypes/RouteType";
 import { getData } from "./ChannelController";
 
-const routes = [
+const routes :[RouteType] = [
   {
     method: "GET",
     url: "/demo",
